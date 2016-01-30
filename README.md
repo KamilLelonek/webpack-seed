@@ -1,4 +1,4 @@
-# ecmascript-webpack-seed
+# typescript-webpack-seed
 
 ## Prerequisites
 

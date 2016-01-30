@@ -1,0 +1,18 @@
+{
+  "filesGlob": [
+    "app/**/*.ts"
+  ],
+  "compilerOptions": {
+    "target":                 "ES6",
+    "module":                 "commonjs",
+    "noImplicitAny":          true,
+    "removeComments":         true,
+    "preserveConstEnums":     true,
+    "sourceMap":              true,
+    "emitDecoratorMetadata":  true,
+    "experimentalDecorators": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

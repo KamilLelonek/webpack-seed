@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const config = {
   entry: [
-    path.resolve("src/index.js"),
+    path.resolve("src/index.ts"),
   ],
 
   output: {
@@ -14,7 +14,7 @@ const config = {
   },
 
   resolve: {
-    extensions: ["", ".js", ".jsx"],
+    extensions: ["", ".ts", ".tsx", ".js", ".jsx"],
     alias: {
       "app": path.resolve("src"),
     }
@@ -34,6 +34,11 @@ const config = {
         exclude: /node_modules/,
         loader:  "babel",
         query:   { presets: ["es2015", "stage-0"] }
+      },
+      {
+        test:    /\.tsx?$/,
+        exclude: /node_modules/,
+        loader:  "ts-loader"
       },
     ],
   },
