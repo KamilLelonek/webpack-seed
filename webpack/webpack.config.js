@@ -30,10 +30,10 @@ const config = {
   module: {
     loaders: [
       {
-        test:    /\.jsx?$/,
+        test:    /\.tsx?$/,
         exclude: /node_modules/,
         loader:  "babel",
-        query:   { presets: ["es2015", "stage-0"] }
+        query:   { presets: ["es2015", "stage-0", "react"] }
       },
       {
         test:    /\.tsx?$/,

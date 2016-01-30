@@ -1,4 +1,4 @@
-# typescript-webpack-seed
+# react-webpack-seed
 
 ## Prerequisites
 
